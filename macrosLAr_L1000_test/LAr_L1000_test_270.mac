@@ -1,0 +1,28 @@
+/MG/manager/mglog routine
+/MG/manager/seedWithUUID
+/MG/processes/realm DarkMatter
+/MG/processes/lowenergy false
+/MG/processes/opticalOnly true
+/MG/geometry/detector LGND_1T_Baseline 
+/MG/L1000/SetSensitiveVolumeArgon false
+/MG/L1000/SetSensitiveVolumeGermanium false
+/MG/L1000/SetSensitiveVolumeSiPM true
+/MG/L1000/SetSensitiveVolumePEN false
+/MG/L1000/MakeSiPlatePEN false
+/run/initialize
+/MG/eventaction/rootschema MCOpticalRun
+/MG/eventaction/reportingfrequency 10
+/MG/eventaction/rootfilename LAr_L1000_testInterior_270.root
+/MG/io/MCOpticalRun/SetSensitiveIDLabelScheme askGeom
+/MG/io/MCOpticalRun/setRunID 001
+/MG/io/MCOpticalRun/useTimeWindow true
+/MG/io/MCOpticalRun/setTimeWindow 86400 second
+/MG/io/MCOpticalRun/setNSteps 10000000000000
+/MG/generator/select LGND1TLiquidArgon
+/MG/generator/LGND1TLiquidArgon/SetRadiusMin 500. mm
+/MG/generator/LGND1TLiquidArgon/SetRadiusMax 1500. mm
+/MG/generator/LGND1TLiquidArgon/SetHeight -360.000000 mm
+/MG/generator/LGND1TLiquidArgon/SetCenterVector 0.0 0.0 0.0 mm
+/MG/generator/LGND1TLiquidArgon/SetNParticles 1
+/MG/generator/LGND1TLiquidArgon/SetBinWidth 5 mm
+/run/beamOn 500
